@@ -86,7 +86,8 @@ $day.addEventListener('change', (event) => {
 
 function viewSwap(view: string): void {
   for (let i = 0; i < $table.length; i++) {
-    if ($table[i].className === view) {
+    if ($table[i].getAttribute('data-view') === view) {
+      console.log();
       $table[i].classList.remove('hidden');
     } else {
       $table[i].classList.add(`hidden`);

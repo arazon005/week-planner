@@ -81,3 +81,11 @@ label {
 .dialog {
   text-align: left;
 }
+
+.edit {
+  background-color: blue;
+}
+
+.delete {
+  background-color: red;
+}
