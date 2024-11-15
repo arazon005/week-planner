@@ -31,10 +31,45 @@ th {
   width: 40%;
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(odd) {
   background-color: rgb(190, 188, 188);
 }
 
 thead {
   background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.confirmation {
+  justify-content: space-between;
+}
+
+.confirm {
+  background-color: green;
+}
+
+textarea {
+  height: 100px;
+  border-radius: 5px;
+}
+
+dialog select {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+label {
+  text-align: left;
 }

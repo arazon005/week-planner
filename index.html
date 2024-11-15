@@ -28,7 +28,7 @@
           <button type="button">Add New Event</button>
         </div>
         <dialog>
-          <div class="row">
+          <div>
             <label for="time">Time of Event</label><br />
             <select id="time">
               <option>0100</option>
@@ -37,7 +37,7 @@
               <!-- timeslots go here -->
             </select>
           </div>
-          <div class="row">
+          <div>
             <label for="dayModal">Day of the Week</label><br />
             <select id="dayModal">
               <option id="sunModal">Sunday</option>
@@ -49,13 +49,13 @@
               <option id="satModal">Saturday</option>
             </select>
           </div>
-          <div class="row">
+          <div>
             <label for="eventInfo">Event Information</label><br />
             <textarea id="eventInfo"></textarea>
           </div>
-          <div class="row">
+          <div class="row confirmation">
             <button type="button">Cancel</button>
-            <button type="submit">Confirm</button>
+            <button type="submit" class="confirm">Confirm</button>
           </div>
         </dialog>
       </form>
@@ -91,6 +91,10 @@
         </tbody>
       </table>
     </div>
+    <script>
+      const $dialog = document.querySelector('dialog');
+      $dialog.showModal();
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
