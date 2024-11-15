@@ -1,7 +1,40 @@
-container{
-
+.container {
+  width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
-thead{
+form div {
+  margin-bottom: 20px;
+}
 
+table {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+
+  /* line-height: 2rem; */
+}
+
+tr {
+  height: 2rem;
+  margin: 0;
+}
+
+td,
+th {
+  border: 0.5px solid gray;
+  margin: 0;
+}
+
+.actions {
+  width: 40%;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(190, 188, 188);
+}
+
+thead {
+  background-color: white;
 }
