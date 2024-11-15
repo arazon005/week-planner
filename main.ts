@@ -39,7 +39,7 @@ $form.addEventListener('submit', (event) => {
   };
 
   for (let i = 0; i < $tableRow.length; i++) {
-    if ($tableRow[i].getAttribute('id') === String(1)) {
+    if ($tableRow[i].getAttribute('id') === String(index)) {
       while ($tableRow[i].firstChild) {
         $tableRow[i].firstChild.remove();
       }
@@ -47,10 +47,33 @@ $form.addEventListener('submit', (event) => {
     }
   }
   index++;
+  $modal.close();
+  $form.reset();
 });
 
 function renderEvent(row: Element, entry: Entry): void {
   const $timeCell = document.createElement('td');
   $timeCell.textContent = entry.time;
   row.appendChild($timeCell);
+
+  const $eventCell = document.createElement('td');
+  $eventCell.textContent = entry.event;
+  row.appendChild($eventCell);
+
+  const $actionCell = document.createElement('td');
+  const $editButton = document.createElement('button');
+  const $deleteButton = document.createElement('button');
+  $editButton.setAttribute('type', 'button');
+  $editButton.className = 'edit';
+  $editButton.textContent = 'edit';
+  $deleteButton.setAttribute('type', 'button');
+  $deleteButton.className = 'delete';
+  $deleteButton.textContent = 'delete';
+  $actionCell.appendChild($editButton);
+  $actionCell.appendChild($deleteButton);
+  row.appendChild($actionCell);
+}
+
+function viewSwap (view:string):void{
+  
 }
