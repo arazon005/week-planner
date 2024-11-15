@@ -81,15 +81,15 @@ const $table = document.querySelectorAll('table');
 $day.addEventListener('change', (event) => {
   const eventTarget = event.target;
   console.log(eventTarget.value);
-
-  if ()
-
+  viewSwap(eventTarget.value);
 });
 
 function viewSwap(view: string): void {
   for (let i = 0; i < $table.length; i++) {
     if ($table[i].className === view) {
-
+      $table[i].classList.remove('hidden');
+    } else {
+      $table[i].classList.add(`hidden`);
     }
   }
 }
