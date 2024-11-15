@@ -16,13 +16,13 @@
           <div>
             <label for="day">Day of Week:</label><br />
             <select id="day">
-              <option id="sun">Sunday</option>
-              <option id="mon">Monday</option>
-              <option id="tue">Tuesday</option>
-              <option id="wed">Wednesday</option>
-              <option id="thu">Thursday</option>
-              <option id="fri">Friday</option>
-              <option id="sat">Saturday</option>
+              <option value="sun">Sunday</option>
+              <option value="mon">Monday</option>
+              <option value="tue">Tuesday</option>
+              <option value="wed">Wednesday</option>
+              <option value="thu">Thursday</option>
+              <option value="fri">Friday</option>
+              <option value="sat">Saturday</option>
             </select>
           </div>
         </div>
@@ -61,7 +61,38 @@
           </div>
         </dialog>
       </form>
-      <table>
+      <table class="mon hidden">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+            <th class="actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-row" id="1">
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-row" id="2">
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-row" id="3">
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-row" id="4">
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="sun">
         <thead>
           <tr>
             <th>Time</th>

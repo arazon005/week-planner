@@ -52,5 +52,17 @@ function renderEvent(row, entry) {
     $actionCell.appendChild($deleteButton);
     row.appendChild($actionCell);
 }
+var $day = document.querySelector('#day');
+var $table = document.querySelectorAll('table');
+$day.addEventListener('change', function (event) {
+    var eventTarget = event.target;
+    console.log(eventTarget.value);
+    if ()
+        ;
+});
 function viewSwap(view) {
+    for (var i = 0; i < $table.length; i++) {
+        if ($table[i].className === view) {
+        }
+    }
 }

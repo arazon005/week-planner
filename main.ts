@@ -74,6 +74,22 @@ function renderEvent(row: Element, entry: Entry): void {
   row.appendChild($actionCell);
 }
 
-function viewSwap (view:string):void{
-  
+const $day = document.querySelector('#day');
+
+const $table = document.querySelectorAll('table');
+
+$day.addEventListener('change', (event) => {
+  const eventTarget = event.target;
+  console.log(eventTarget.value);
+
+  if ()
+
+});
+
+function viewSwap(view: string): void {
+  for (let i = 0; i < $table.length; i++) {
+    if ($table[i].className === view) {
+
+    }
+  }
 }
