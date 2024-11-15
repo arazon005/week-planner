@@ -73,3 +73,7 @@ dialog select {
 label {
   text-align: left;
 }
+
+.dialog {
+  text-align: left;
+}

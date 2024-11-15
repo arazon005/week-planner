@@ -12,24 +12,26 @@
       <h2>Choose Day to Show Events</h2>
 
       <form>
-        <div class="">
-          <label for="day">Day of Week</label><br />
-          <select id="day">
-            <option id="sun">Sunday</option>
-            <option id="mon">Monday</option>
-            <option id="tue">Tuesday</option>
-            <option id="wed">Wednesday</option>
-            <option id="thu">Thursday</option>
-            <option id="fri">Friday</option>
-            <option id="sat">Saturday</option>
-          </select>
+        <div>
+          <div>
+            <label for="day">Day of Week:</label><br />
+            <select id="day">
+              <option id="sun">Sunday</option>
+              <option id="mon">Monday</option>
+              <option id="tue">Tuesday</option>
+              <option id="wed">Wednesday</option>
+              <option id="thu">Thursday</option>
+              <option id="fri">Friday</option>
+              <option id="sat">Saturday</option>
+            </select>
+          </div>
         </div>
         <div>
-          <button type="button">Add New Event</button>
+          <button type="button" class="add">Add New Event</button>
         </div>
         <dialog>
-          <div>
-            <label for="time">Time of Event</label><br />
+          <div class="dialog">
+            <label for="time">Time of Event:</label><br />
             <select id="time">
               <option>0100</option>
               <option>0200</option>
@@ -37,8 +39,8 @@
               <!-- timeslots go here -->
             </select>
           </div>
-          <div>
-            <label for="dayModal">Day of the Week</label><br />
+          <div class="dialog">
+            <label for="dayModal">Day of the Week:</label><br />
             <select id="dayModal">
               <option id="sunModal">Sunday</option>
               <option id="monModal">Monday</option>
@@ -49,12 +51,12 @@
               <option id="satModal">Saturday</option>
             </select>
           </div>
-          <div>
-            <label for="eventInfo">Event Information</label><br />
+          <div class="dialog">
+            <label for="eventInfo">Event Information:</label><br />
             <textarea id="eventInfo"></textarea>
           </div>
           <div class="row confirmation">
-            <button type="button">Cancel</button>
+            <button type="button" class="cancel">Cancel</button>
             <button type="submit" class="confirm">Confirm</button>
           </div>
         </dialog>
@@ -91,10 +93,7 @@
         </tbody>
       </table>
     </div>
-    <script>
-      const $dialog = document.querySelector('dialog');
-      $dialog.showModal();
-    </script>
+
     <script src="main.js"></script>
   </body>
 </html>
