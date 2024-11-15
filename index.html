@@ -1,12 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week Planner</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contianer">
+      <h1>Weekly Planner</h1>
+      <h2>Choose Day to Show Events</h2>
+
+      <form>
+        <div>
+          <label for="day">Day of Week</label><br />
+          <select id="day">
+            <option id="sun">Sunday</option>
+            <option id="mon">Monday</option>
+            <option id="tue">Tuesday</option>
+            <option id="wed">Wednesday</option>
+            <option id="thu">Thursday</option>
+            <option id="fri">Friday</option>
+            <option id="sat">Saturday</option>
+          </select>
+        </div>
+        <div>
+          <button type="button">Add New Event</button>
+        </div>
+        <dialog>
+          <div class="row">
+            <label for="time">Time of Event</label><br />
+            <select id="time">
+              <option>0100</option>
+              <option>0200</option>
+              <option>0300</option>
+              <!-- timeslots go here -->
+            </select>
+          </div>
+          <div class="row">
+            <label for="dayModal">Day of the Week</label><br />
+            <select id="dayModal">
+              <option id="sunModal">Sunday</option>
+              <option id="monModal">Monday</option>
+              <option id="tueModal">Tuesday</option>
+              <option id="wedModal">Wednesday</option>
+              <option id="thuModal">Thursday</option>
+              <option id="friModal">Friday</option>
+              <option id="satModal">Saturday</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="eventInfo">Event Information</label><br />
+            <textarea id="eventInfo"></textarea>
+          </div>
+        </dialog>
+      </form>
+    </div>
+    <script>
+      const $dialog = document.querySelector('dialog');
+      $dialog.showModal();
+    </script>
+    <script src="main.js"></script>
+  </body>
 </html>
